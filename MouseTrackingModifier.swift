@@ -3,17 +3,17 @@ import SwiftUI
 
 public struct MouseState
 {
-	var leftDown : Bool
-	var middleDown : Bool
-	var rightDown : Bool
+	public var leftDown : Bool
+	public var middleDown : Bool
+	public var rightDown : Bool
 
-	var position : CGPoint	//	in view space
+	public var position : CGPoint	//	in view space
 }
 
 public struct MouseScrollEvent
 {
-	var scrollDelta : CGFloat
-	var position : CGPoint	//	in view space
+	public var scrollDelta : CGFloat
+	public var position : CGPoint	//	in view space
 }
 
 public struct MouseTrackingModifier : ViewModifier
