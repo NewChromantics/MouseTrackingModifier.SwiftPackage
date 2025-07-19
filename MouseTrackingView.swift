@@ -45,8 +45,10 @@ public class MouseStateTrackingView : UIView
 		self.onMouseScroll = onMouseScroll
 		super.init(frame: UIRect())
 		
+#if canImport(AppKit)
 		//	enable mouse move events when tracking area changes(layout changes)
 		self.window?.acceptsMouseMovedEvents = true
+#endif
 	}
 	
 #if canImport(AppKit)
